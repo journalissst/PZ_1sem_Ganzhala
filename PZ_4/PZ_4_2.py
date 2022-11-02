@@ -12,4 +12,3 @@ while n1 > 0:
     n2 = n2 + digit
 
 print('"Обратное" ему число:', n2)
-# uyguy
