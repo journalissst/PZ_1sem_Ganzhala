@@ -3,17 +3,15 @@
 # Зашифровать ее, поместив вначале все символы, расположенные на четных позициях строки, а затем, в обратном порядке,
 # все символы, расположенные на нечетных позициях (например, строка “Программа” превратится в “аммаргорП”).
 
-list2 = []
-list3 = []
-a = []
-words = []
-word = input("Введите строку: ")
-for i in range(0, len(word)):
+stringg = input("Введите строку: ")
+answer_string = ''
+for i in range(0, len(stringg)):
     if i % 2 != 0:
-        list3.append(word[i])
-        words = word[::-1]
-for i in range(0, len(word)):
-    if i % 2 == 0:
-        list2.append(words[i])
-        a = list3+list2
-print(*a, sep="")
+        answer_string += stringg[i]
+b = len(stringg)
+while b >= 0:
+    if b % 2 == 0:
+        answer_string += stringg[b]
+    b -= 1
+
+print(answer_string)
