@@ -15,7 +15,7 @@ f1.close()
 
 # Создание второго файла
 f1 = open("file_2.txt", "w", encoding="UTF-8")
-f1.write("Исходные данные:\n")
+f1.write(f"Исходные данные: {list_1}\n")
 f1.write(f"Количество элементов:{len(list_1)}\n")
 f1.write(f"Минимальный элемент:{min(list_1)}\n")
 list_2 = [i * max(list_1) for i in list_1]
