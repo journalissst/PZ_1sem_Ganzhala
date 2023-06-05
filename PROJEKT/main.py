@@ -5,17 +5,21 @@ from PyQt5.QtGui import QIcon
 from ui import Ui_MainWindow
 from currency_converter import CurrencyConverter
 
+
 # базовая конструкция для запуска программы
+
+
 class CurrencyConv(QtWidgets.QMainWindow):
     def __init__(
-            self): # тк я наследовалась от класса QMainWindow мне необходимо вызвать два конструктора (для класса CurrencyConv, второй для унаследования класса)
+            self):  # тк я наследовалась от класса QMainWindow мне необходимо вызвать два конструктора
+        # (для класса CurrencyConv, второй для унаследования класса)
         super(CurrencyConv, self).__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.init_Ui()
 
- # поменяем название и иконку приложения
-    def init_Ui(self):
+    # поменяем название и иконку приложения
+    def init_ui(self):
         self.setWindowTitle('CurrencyConverter')
         self.setWindowIcon(QIcon('exchanging.png'))
 
@@ -51,5 +55,5 @@ app = QtWidgets.QApplication([])
 application = CurrencyConv()
 application.show()
 
-    # вызовем основной цикл обработки события и вызможность выхода из него
+# вызовем основной цикл обработки события и вызможность выхода из него
 sys.exit(app.exec())
