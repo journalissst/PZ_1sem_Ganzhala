@@ -43,7 +43,7 @@ class Ui_MainWindow(object):
         self.label_2 = QtWidgets.QLabel(self.frame)
         self.label_2.setGeometry(QtCore.QRect(150, 80, 181, 181))
         self.label_2.setText("")
-        self.label_2.setPixmap(QtGui.QPixmap("exchanging.png"))
+        self.label_2.setPixmap(QtGui.QPixmap("../../../Downloads/рисунок8.FGjyp.png"))
         self.label_2.setObjectName("label_2")
         self.input_currency = QtWidgets.QLineEdit(self.centralwidget)
         self.input_currency.setGeometry(QtCore.QRect(50, 320, 380, 60))
