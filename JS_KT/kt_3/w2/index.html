@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../w2/script.js"></script>
+</head>
+<body>
+    <form id="formes">
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" onclick="Mess()"><br><br>
+        <p>Что вам нравится больше?</p>
+        <form>
+            <input type="radio" value="Мороженное" id="morosh" onclick="mor()">Мороженное<br><br>
+            <input type="radio" value="Шоколад" id="shok" onclick="sho()">Шоколад
+        </form><br>
+        <button type="button" onclick="button()">Отправить запрос</button>
+    </form>
+</body>
+</html>
